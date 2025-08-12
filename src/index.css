@@ -8,11 +8,13 @@
 }
 @font-face {
   font-family: "Font1";
-  src: url("/Font1.otf");
+  src: url("/Font1.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Font2";
-  src: url("Font2.ttf");
+  src: url("/Font2.ttf") format("truetype");
+  font-display: swap;
 }
 
 @layer components {
