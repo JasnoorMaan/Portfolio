@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .clip-path1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@font-face {
+  font-family: "Font1";
+  src: url("/Font1.otf");
+}
+@font-face {
+  font-family: "Font2";
+  src: url("Font2.ttf");
+}
+
+@layer components {
+  .Heading {
+    @apply font-Font1 text-white font-semibold lg:text-9xl text-6xl;
+  }
+}
