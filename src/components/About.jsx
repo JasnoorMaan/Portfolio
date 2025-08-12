@@ -133,7 +133,7 @@ const SocialBlock = ({ variants }) => {
     <motion.div variants={variants} className="contents">
       <Block className="col-span-6 bg-blue-800 md:col-span-3">
         <a
-          href=""
+          href="https://www.linkedin.com/in/jasnoormaan/"
           className="grid h-full place-content-center text-3xl text-white"
         >
           <SiLinkedin />
@@ -141,7 +141,7 @@ const SocialBlock = ({ variants }) => {
       </Block>
       <Block className="col-span-6 bg-black md:col-span-3">
         <a
-          href=""
+          href="https://x.com/mxxnJasnoor"
           className="grid h-full place-content-center text-3xl text-white"
         >
           <SiX />
@@ -149,7 +149,7 @@ const SocialBlock = ({ variants }) => {
       </Block>
       <Block className="col-span-6 bg-zinc-900 md:col-span-3">
         <a
-          href=""
+          href="https://github.com/JasnoorMaan"
           className="grid h-full place-content-center text-3xl text-white"
         >
           <SiGithub />
@@ -157,7 +157,7 @@ const SocialBlock = ({ variants }) => {
       </Block>
       <Block className="col-span-6 bg-neutral-800 md:col-span-3">
         <a
-          href=""
+          href="mailto:jasnoormwork@gmail.com"
           className="grid h-full place-content-center text-3xl text-white"
         >
           <SiMailboxdotorg />

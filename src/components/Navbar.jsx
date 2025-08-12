@@ -45,7 +45,7 @@ const NavBar = () => {
           <a href="#home" className="text-2xl font-semibold">
             Jasnoor.Maan
           </a>
-          <a href="#contactt">Contact</a>
+          <a href="#contactt">Let's collab✌️</a>
         </div>
       </nav>
     </>
