@@ -81,7 +81,6 @@ const Projects = () => {
           </div>
         ))}
 
-        {/* Multi-project slide */}
         <section className="slide min-h-[90vh] md:min-h-[100vh] p-2 md:p-4 m-2 md:m-4 mb-2 md:mb-4">
           <div className="bg-black grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 min-h-full p-4 md:p-8">
             {/* TFGET Project */}
@@ -91,9 +90,9 @@ const Projects = () => {
                 alt="TFGET"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               />
-              {/* Blur Gradient Overlay from bottom to top */}
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent rounded-2xl"></div>
-              {/* Additional blur effect for bottom section */}
+
               <div className="absolute bottom-0 left-0 right-0 h-2/3 backdrop-blur-[1px] bg-gradient-to-t from-black/30 to-transparent rounded-b-2xl"></div>
 
               <div className="relative z-10 flex flex-col justify-end h-full">
@@ -114,7 +113,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-2 flex-wrap">
                   <a
-                    href="https://icemceetfget.in/"
+                    href="https://me-conf.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
@@ -122,7 +121,7 @@ const Projects = () => {
                     Visit Site
                   </a>
                   <a
-                    href="https://github.com/JasnoorMaan/Conference-Website"
+                    href="https://github.com/JasnoorMaan/me_conf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
@@ -140,9 +139,7 @@ const Projects = () => {
                 alt="Ecoyaan"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               />
-              {/* Blur Gradient Overlay from bottom to top */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent rounded-2xl"></div>
-              {/* Additional blur effect for bottom section */}
               <div className="absolute bottom-0 left-0 right-0 h-2/3 backdrop-blur-[1px] bg-gradient-to-t from-black/30 to-transparent rounded-b-2xl"></div>
 
               <div className="relative z-10 flex flex-col justify-end h-full">
@@ -154,23 +151,20 @@ const Projects = () => {
                     UI/UX
                   </span>
                   <span className="tag text-white bg-white/20 backdrop-blur-sm px-2 md:px-3 py-1 rounded-full text-xs md:text-sm border border-white/30">
-                    Figma
-                  </span>
-                  <span className="tag text-white bg-white/20 backdrop-blur-sm px-2 md:px-3 py-1 rounded-full text-xs md:text-sm border border-white/30">
-                    Prototype
+                    ReactJS
                   </span>
                 </div>
                 <div className="flex gap-2 flex-wrap">
                   <a
-                    href="https://www.figma.com/design/ecoyaan-redesign"
+                    href="https://eco-yaan.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
                   >
-                    View Design
+                    View Site
                   </a>
                   <a
-                    href="https://github.com/JasnoorMaan/Ecoyaan-Redesign"
+                    href="https://github.com/JasnoorMaan/EcoYaan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
@@ -188,9 +182,7 @@ const Projects = () => {
                 alt="Portfolio Website"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               />
-              {/* Blur Gradient Overlay from bottom to top */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent rounded-2xl"></div>
-              {/* Additional blur effect for bottom section */}
               <div className="absolute bottom-0 left-0 right-0 h-2/3 backdrop-blur-[1px] bg-gradient-to-t from-black/30 to-transparent rounded-b-2xl"></div>
 
               <div className="relative z-10 flex flex-col justify-end h-full">
@@ -210,7 +202,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-2 flex-wrap">
                   <a
-                    href="https://jasnoor-portfolio.vercel.app"
+                    href="https://jasnoormaanportfolio.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
@@ -218,7 +210,7 @@ const Projects = () => {
                     Visit Site
                   </a>
                   <a
-                    href="https://github.com/JasnoorMaan/Portfolio"
+                    href="https://github.com/JasnoorMaan/port"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
@@ -236,9 +228,7 @@ const Projects = () => {
                 alt="Robotic Arm"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               />
-              {/* Blur Gradient Overlay from bottom to top */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent rounded-2xl"></div>
-              {/* Additional blur effect for bottom section */}
               <div className="absolute bottom-0 left-0 right-0 h-2/3 backdrop-blur-[1px] bg-gradient-to-t from-black/30 to-transparent rounded-b-2xl"></div>
 
               <div className="relative z-10 flex flex-col justify-end h-full">
@@ -258,20 +248,12 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-2 flex-wrap">
                   <a
-                    href="https://github.com/JasnoorMaan/3-DOF-Robotic-Arm"
+                    href="https://github.com/JasnoorMaan/majorProject"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
                   >
                     GitHub
-                  </a>
-                  <a
-                    href="https://youtu.be/robotic-arm-demo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white hover:bg-gray-100 px-3 py-1.5 rounded-xl text-black textFont text-xs md:text-sm transition-colors duration-300"
-                  >
-                    Demo
                   </a>
                 </div>
               </div>
