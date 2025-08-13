@@ -1,14 +1,23 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import SplineScene from "./SplineScene";
 
-const Hero = () => {
+const Hero = ({ startAnimations, onSplineLoad }) => {
+  const [animationsTriggered, setAnimationsTriggered] = useState(false);
+
+  // shutter opening triggers animations
+  useEffect(() => {
+    if (startAnimations && !animationsTriggered) {
+      setAnimationsTriggered(true);
+    }
+  }, [startAnimations, animationsTriggered]);
   const containerVariants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 1,
-        delayChildren: 0.5,
+        staggerChildren: 0.6,
+        delayChildren: 0.2,
       },
     },
   };
@@ -31,7 +40,7 @@ const Hero = () => {
   return (
     <>
       <div className="p-4 px-8 gap-y-16 flex flex-col flex-nowrap justify-end align-middle h-[100vh]">
-        <SplineScene />
+        <SplineScene onLoad={onSplineLoad} />
         <div className="flex flex-col flex-nowrap justify-end align-middle gap-y-12">
           <div className="font-semibold z-10 lg:gap-x-64 flex flex-col justify-center align-middle lg:px-4 text-sm lg:text-md">
             <p>SOFTWARE ENGINEER</p>
@@ -41,7 +50,7 @@ const Hero = () => {
             <motion.div
               variants={containerVariants}
               initial="hidden"
-              animate="visible"
+              animate={animationsTriggered ? "visible" : "hidden"}
               className="hero-headingg font-[Font1] flex flex-col align-middle justify-start font-semibold lg:text-9xl text-6xl"
             >
               <motion.div variants={itemVariants} className="overflow-hidden">
@@ -57,6 +66,5 @@ const Hero = () => {
     </>
   );
 };
-// ref={target}
 
 export default Hero;

@@ -1,23 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-const NavBar = () => {
+const NavBar = ({ startAnimation }) => {
   const navRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const navi = gsap.fromTo(
-      navRef.current,
-      {
-        y: "-100%",
-      },
-      {
+    // initial position
+    gsap.set(navRef.current, { y: "-100%" });
+
+    // Only drop down when startAnimation is true
+    if (startAnimation) {
+      gsap.to(navRef.current, {
         y: 0,
-        delay: 3,
+        duration: 2.5,
         ease: "Power4.easeOut",
-      }
-    );
-  }, []);
+        delay: 0.2,
+      });
+    }
+  }, [startAnimation]);
 
   useEffect(() => {
     const handleScroll = () => {
