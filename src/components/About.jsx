@@ -9,7 +9,7 @@ import {
   SiCodeforces,
   SiLeetcode,
 } from "react-icons/si";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaGoogleDrive } from "react-icons/fa";
 
 const About = () => {
   const containerVariants = {
@@ -207,6 +207,12 @@ const ProfileBlock = ({ variants }) => {
       <a href="https://atcoder.jp/users/electric1" target="_blank" rel="noopener noreferrer">
        <FaCode className="size-8" />
        <h2 className="pt-2 text-small">Atcoder</h2>
+      </a>
+    </Block>
+    <Block className="col-span-6 lg:col-span-3" variants={variants}>
+      <a href="https://drive.google.com/drive/folders/1IFp6BQH80ZFqRxpmrogoRPPSiBK94Pjj?usp=drive_link" target="_blank" rel="noopener noreferrer">
+      <FaGoogleDrive className="size-8" />
+      <h2 className="pt-2 text-small">Resume</h2>
       </a>
     </Block>
     </>
