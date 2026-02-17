@@ -44,7 +44,7 @@ const Hero = ({ startAnimations, onSplineLoad }) => {
         <div className="flex flex-col flex-nowrap justify-end align-middle gap-y-12">
           <div className="font-semibold z-10 lg:gap-x-64 flex flex-col justify-center align-middle lg:px-4 text-sm lg:text-md">
             <p>SOFTWARE ENGINEER</p>
-            <p>BASED IN INDIA</p>
+            <p>BASED IN BLR</p>
           </div>
           <div className="hero-container">
             <motion.div

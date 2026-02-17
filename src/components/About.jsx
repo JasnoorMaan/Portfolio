@@ -6,7 +6,10 @@ import {
   SiGithub,
   SiPostman,
   SiMailboxdotorg,
+  SiCodeforces,
+  SiLeetcode,
 } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 const About = () => {
   const containerVariants = {
@@ -56,10 +59,10 @@ const About = () => {
           <HeaderBlock variants={itemVariants} />
           <SocialBlock variants={itemVariants} />
           <Block
-            className="col-span-6 lg:col-span-4 font-medium"
+            className="col-span-6 lg:col-span-4 text-zinc-400 font-medium"
             variants={itemVariants}
           >
-            PixelPerfect 2023 Hackathon Winner
+            engineering<span className="text-white"> @Wiingy</span>
           </Block>
           <Block
             className="col-span-6 lg:col-span-4 text-zinc-400 font-medium"
@@ -68,23 +71,31 @@ const About = () => {
             Amazon MLSS 2024 Mentee
           </Block>
           <Block
-            className="col-span-6 lg:col-span-4 font-medium"
-            variants={itemVariants}
-          >
-            Summer of Bitcoin Design 2024 Mentee
-          </Block>
-          <Block
-            className="col-span-10 lg:col-span-6 font-medium text-zinc-400"
-            variants={itemVariants}
-          >
-            RC Racing and Bot Bolt Design TechNITi 2022 Winner
-          </Block>
-          <Block
             className="col-span-10 lg:col-span-6 font-medium text-zinc-400"
             variants={itemVariants}
           >
             ex frontend dev intern <span className="text-white">@Lamarr</span>
           </Block>
+          <Block
+            className="col-span-6 lg:col-span-4 font-medium"
+            variants={itemVariants}
+          >
+            PixelPerfect 2023 Hackathon Winner
+          </Block>
+          
+          <Block
+            className="col-span-6 lg:col-span-6 font-medium"
+            variants={itemVariants}
+          >
+            Summer of Bitcoin Design 2024 Mentee
+          </Block>
+          <Block
+            className="col-span-10 lg:col-span-5 font-medium text-zinc-400"
+            variants={itemVariants}
+          >
+            RC Racing and Bot Bolt Design TechNITi 2022 Winner
+          </Block>
+          
           <Block
             className="col-span-10 lg:col-span-4 font-medium text-zinc-400"
             variants={itemVariants}
@@ -93,6 +104,7 @@ const About = () => {
             <span className="text-white">@Incisiv, New Jersey</span>
           </Block>
           <AboutBlock variants={itemVariants} />
+          <ProfileBlock variants={itemVariants} />
         </motion.div>
       </motion.div>
     </>
@@ -177,4 +189,27 @@ const AboutBlock = ({ variants }) => {
     </Block>
   );
 };
+const ProfileBlock = ({ variants }) => {
+  return (
+    <>
+    <Block className="col-span-6 lg:col-span-3" variants={variants}>
+      <a href="https://codeforces.com/profile/jayden1000" target="_blank" rel="noopener noreferrer">
+      <SiCodeforces className="size-8" />
+      <h2 className="pt-2 text-small">Codeforces</h2>
+      </a>
+    </Block>
+    <Block className="col-span-6 lg:col-span-3" variants={variants}>
+      <a href="https://leetcode.com/jasnoormxxn/" target="_blank" rel="noopener noreferrer">  <SiLeetcode className="size-8" />
+      <h2 className="pt-2 text-small">Leetcode</h2>
+      </a>
+    </Block>
+    <Block className="col-span-6 lg:col-span-3" variants={variants}>
+      <a href="https://atcoder.jp/users/electric1" target="_blank" rel="noopener noreferrer">
+       <FaCode className="size-8" />
+       <h2 className="pt-2 text-small">Atcoder</h2>
+      </a>
+    </Block>
+    </>
+  )
+}
 export default About;
